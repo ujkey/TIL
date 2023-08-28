@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="881bd7da-ecae-45fc-86d9-01341927ba44" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CSS/swipe animation.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Design Pattern/Optimistic UI.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Design Pattern/img/optimisticUI.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +73,7 @@
       <workItem from="1692837843109" duration="523000" />
       <workItem from="1692838388764" duration="336000" />
       <workItem from="1692838747127" duration="2021000" />
-      <workItem from="1693206766316" duration="890000" />
+      <workItem from="1693206766316" duration="5678000" />
     </task>
     <servers />
   </component>
