@@ -34,7 +34,7 @@
 
 <br/>
 
-## 3. 클래스
+## 3. 문법
 ### Groups and ranges
 
 | Character | 뜻                                     |
