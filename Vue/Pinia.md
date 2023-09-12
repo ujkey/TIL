@@ -4,19 +4,31 @@
 
 <br/><br/>
 
-## 0. 설치
-```bash
-npm install pinia
-# or
-yarn add pinia
-```
+## 0. 상태관리 라이브러리의 필요성
+![before.png](./img/before_store.png)
+
+Vue.js에서 하나의 화면은 수많은 컴포넌트로 구성되어 있어서 부모 컴포넌트와 자식 컴포넌트 간에 관계가 존재한다.
+부모-자식 컴포넌트 관계가 깊어지면 부모 컴포넌트의 상태를 자식 컴포넌트로 전달하기 위해 계속해서 인자를 전달해야 하는 번거로운 코드가 반복될 수 있다.<br/>
+
+![after.png](./img/after_store.png)
+Vue.js에서는 이러한 문제를 해결하기 위해 Vuex와 Pinia와 같은 상태 관리 라이브러리가 등장했다. 이러한 라이브러리는 모든 컴포넌트에서 `중앙 집중식 저장소` 역할을 수행한다.<br/>
 
 <br/>
 
 ## 1. 스토어 만들기
 Pinia에서는 스토어를 생성하여 애플리케이션의 상태를 관리한다<br/>
-스토어란 state, getters, actions을 포함하는 모듈식 단위
-### Option Stores(option API)
+스토어란 state, getters, actions을 포함하는 모듈식 단위<br/>
+Pinia에서는 동기/비동기적 로직 모두 action에서 수행할 수 있기 때문에, mutations이 없다
+
+### 설치
+```bash
+npm install pinia
+# or
+yarn add pinia
+```
+<br/>
+
+### Option Stores(options API)
 ```javascript
 import { defineStore } from 'pinia';
 
@@ -151,7 +163,8 @@ export default {
 <br/>
 
 ## 3. Multiple store
-Pinia는 여러개의 스토어를 생성할 수 있다(multiple store)<br/>
+Pinia는 여러개의 스토어를 생성할 수 있다<br/>
+유사한 성격의 요소들을 독립된 store에서 관리
 ### 스토어 조합
 서로를 사용하는 스토어
 ```javascript
@@ -171,6 +184,8 @@ const useX = defineStore('x', () => {
   }
 })
 ```
+
+<br/>
 
 ### 중첩 스토어
 한 스토어가 다른 스토어를 사용하는 경우, getter or action내에서 useStore() 함수를 직접 호출하고 사용
